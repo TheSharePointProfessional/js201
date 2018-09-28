@@ -9,9 +9,17 @@
 // Examples:
 // tipAmount(100, 'good') --> 20
 // tipAmount(40, 'fair') --> 6
-
-
-
+function tipAmount (billAmount, servicelvl) {
+    if (servicelvl === "good") {
+        return (billAmount * (20 / 100))
+    }
+    else if (servicelvl === "fair") {
+        return (billAmount * (15 / 100))
+    }
+    else if (servicelvl === "bad") {
+        return (billAmount * (20 / 100))
+    }
+}
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "totalAmount" that takes the same arguments as "tipAmount"
 // except it returns the total as the tip amount plus the bill amount.
@@ -20,9 +28,17 @@
 // Examples:
 // totalAmount(100, 'good') --> 120
 // totalAmount(40, 'fair') --> 46
-
-
-
+function totalAmount (billAmount, servicelvl) {
+    if (servicelvl === "good") {
+        return (billAmount * (20 / 100)) + billAmount
+    }
+    else if (servicelvl === "fair") {
+        return (billAmount * (15 / 100)) + billAmount
+    }
+    else if (servicelvl === "bad") {
+        return (billAmount * (20 / 100)) + billAmount
+    }
+}
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "splitAmount" that takes a bill amount, the level of service,
 // and the number of people to split the bill between. It should return the final
@@ -31,3 +47,14 @@
 // Examples:
 // splitAmount(100, 'good', 5) --> 24
 // splitAmount(40, 'fair', 2) --> 23
+function splitAmount (billAmount, servicelvl, numOfPeople) {
+    if (servicelvl === "good") {
+        return ((billAmount * (20 / 100)) + billAmount) / numOfPeople
+    }
+    else if (servicelvl === "fair") {
+        return ((billAmount * (15 / 100)) + billAmount) / numOfPeople
+    }
+    else if (servicelvl === "bad") {
+        return ((billAmount * (20 / 100)) + billAmount) / numOfPeople
+    }
+}
