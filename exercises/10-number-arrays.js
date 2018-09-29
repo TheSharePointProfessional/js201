@@ -4,7 +4,10 @@
 // sumNumbers([1, 4, 8]) --> 13
 function sumNumbers(array) {
     function getSum(total, num) {
-        return total + num;
+        var total = 0
+        var num = 0
+        var sum = total + num
+        return sum
     }
     return array.reduce(getSum)
 }

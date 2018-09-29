@@ -736,7 +736,7 @@ if (allSyntaxValid) {
   describe('Number Joiners', checkNumberJoiners)
   describe('Make Boxes', checkMakeBoxes)
   describe('Factors', checkFactors)
-  describe('Caesar Cipher', checkCaesarCipher)
+  //describe('Caesar Cipher', checkCaesarCipher)
   describe('Leetspeak', checkLeetspeak)
   describe('Long-long Vowels', checkLongLongVowels)
   describe('Number Arrays', checkNumberArrays)
