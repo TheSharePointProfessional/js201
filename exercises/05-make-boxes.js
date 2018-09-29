@@ -132,4 +132,3 @@ function makeBanner (text) {
     }
     return banner.join('\n')
 }
-console.log(makeBanner('Welcome to DigitalCrafts'))
